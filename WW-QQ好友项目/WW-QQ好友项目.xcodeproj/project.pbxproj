@@ -20,6 +20,7 @@
 		F51DFCC61BF62EBF00D8CA1F /* WWGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F51DFCC51BF62EBF00D8CA1F /* WWGroup.m */; };
 		F527BDF01BF6447C005B2314 /* WWFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F527BDEF1BF6447C005B2314 /* WWFriendCell.m */; };
 		F527BDF31BF644A3005B2314 /* WWHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F527BDF21BF644A3005B2314 /* WWHeaderView.m */; };
+		F52E8D331BF76E1C00B7ED32 /* WWFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52E8D321BF76E1C00B7ED32 /* WWFriendCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F527BDEF1BF6447C005B2314 /* WWFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWFriendCell.m; sourceTree = "<group>"; };
 		F527BDF11BF644A3005B2314 /* WWHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWHeaderView.h; sourceTree = "<group>"; };
 		F527BDF21BF644A3005B2314 /* WWHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWHeaderView.m; sourceTree = "<group>"; };
+		F52E8D321BF76E1C00B7ED32 /* WWFriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WWFriendCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,9 +156,9 @@
 		F51DFCAF1BF62B5200D8CA1F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F51DFCB21BF62B5200D8CA1F /* Other */,
 				F51DFCB01BF62B5200D8CA1F /* Controller */,
 				F51DFCBE1BF62BE100D8CA1F /* ViewController.h */,
+				F51DFCB21BF62B5200D8CA1F /* Other */,
 				F51DFCBF1BF62BE100D8CA1F /* ViewController.m */,
 				F51DFCB11BF62B5200D8CA1F /* Model */,
 				F51DFCB81BF62B5200D8CA1F /* View */,
@@ -199,6 +201,7 @@
 				F527BDEF1BF6447C005B2314 /* WWFriendCell.m */,
 				F527BDF11BF644A3005B2314 /* WWHeaderView.h */,
 				F527BDF21BF644A3005B2314 /* WWHeaderView.m */,
+				F52E8D321BF76E1C00B7ED32 /* WWFriendCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				F51DFC891BF621B900D8CA1F /* Assets.xcassets in Resources */,
 				F51DFCBD1BF62B8A00D8CA1F /* friends.plist in Resources */,
 				F51DFC871BF621B900D8CA1F /* Main.storyboard in Resources */,
+				F52E8D331BF76E1C00B7ED32 /* WWFriendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
