@@ -7,7 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "WWGroup.h"
 
-@interface WWHeaderView : NSObject
+@class WWHeaderView;
+
+@protocol WWheaderViewDelegate <NSObject>
+
+@optional
+- (void)headerView:(WWHeaderView *)headerView;
+
+@end
+
+@interface WWHeaderView : UITableViewHeaderFooterView
+
+// 类工厂
++ (instancetype)headerViewWithTableView:(UITableView *)tabView;
+
+// 自定义构造
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier;
+
+
+// 模型
+@property (nonatomic, strong) WWGroup *group;
+
+@property (nonatomic, weak) id<WWheaderViewDelegate> delegate;
+
 
 @end

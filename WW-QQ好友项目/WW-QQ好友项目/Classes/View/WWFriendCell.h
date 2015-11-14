@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WWFriends.h"
 
 @interface WWFriendCell : UITableViewCell
+
+
+// 类工厂
++ (instancetype)friendCellWithTableView:(UITableView *)tableView;
+
+
+
+@property (nonatomic, strong) WWFriends *friendData;
 
 @end

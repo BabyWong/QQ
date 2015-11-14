@@ -10,17 +10,25 @@
 
 @implementation WWFriendCell
 
-- (void)awakeFromNib {
++ (instancetype)friendCellWithTableView:(UITableView *)tableView {
     
-    
-    
+    NSString *ID = @"cell";
+    WWFriendCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[WWFriendCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
+    return cell;
+}
+
+- (void)setFriendData:(WWFriends *)friendData {
+    _friendData = friendData;
+    self.imageView.image = [UIImage imageNamed:friendData.icon];
+    self.textLabel.text = friendData.name;
+    self.textLabel.textColor = friendData.isVip ? [UIColor orangeColor] : [UIColor blackColor];
+    self.detailTextLabel.text = friendData.intro;
     
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
-}
 
 @end
